@@ -42,3 +42,13 @@
 - author of the commit
 - date the commit occurred
 - commit message
+
+## Connecting Git Repo to GitHub Repo
+
+- create a repository on GitHub
+    - sign in to GitHub with your credentials
+    - find the green `new` button to create a new repository
+    - give it a repo name
+    - choose visibility (usually public)
+    - click `create repository`
+- copy the HTTPS (or SSH if your setup requires it) link to your repo
