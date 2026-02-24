@@ -19,12 +19,16 @@
     - if you want to add all of the files at once, use `git add .`
 - if you would like to unstage a file, you can use `git rm --cached <name of file>` to do so
 - if you are ready to commit, use the `git commit -m "your commit message here"`
+> [!TIP]
+> commit messages should succintly explain your changes
+- `git log` will show you a history of commits
 
 ## Git Lingo
 
 - branch - a timeline of your code at any given point
 - the default branch is called the `main` branch or `master`
 - commit - a snapshot of your code at a specific point in time
+- commit message - a message describing changes in your commit
 
 ## Git Stages
 
@@ -42,6 +46,7 @@
 - author of the commit
 - date the commit occurred
 - commit message
+- to get out of it, you may need to hit `q`
 
 ## Connecting Git Repo to GitHub Repo
 
@@ -52,6 +57,17 @@
     - choose visibility (usually public)
     - click `create repository`
 - copy the HTTPS (or SSH if your setup requires it) link to your repo
+- run the following command `git remote add origin <paste your link here>`
+    - `remote` is responsible for remote repos
+    - `add` adds something
+    - `origin` this is the name we will give our remote repo to reference later. Commonly use origin or upstream
+    - `<your link>` is the HTTPS or SSH endpoint from GitHub Repo
+- return back to syntax is a good thing!
+- to verify it's sucessfully linked, run `git remote -v` to see the endpoint
+    - name of the endpoint
+    - the endpoint itself
+    - fetch (bring down) and push (send up)
+- in order to push your code, run `git push origin <name of branch>` (ex: `git push origin main`)
 
 ## Branches
 
