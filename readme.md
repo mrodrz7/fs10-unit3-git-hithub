@@ -73,4 +73,6 @@ What if we want to bring the changes from one branch to another? We can do that!
 
 - you want to do this from the branch you want to merge to
 - check which branch you're in using `git branch`
+- ensure you have staged and commited all of your changes
 - checkout to the branch you want to merge to using `git checkout <name of branch>`
+- run `git merge <name of branch you're merging FROM>`
